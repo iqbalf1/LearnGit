@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <EditText
+    android:id="@+id/email_edit_text"
+    android:text="Email"
+        android:layout_marginBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/user_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_edit_text"
+        android:layout_toStartOf="@+id/password_edit_text"
+        android:text="Username" />
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:text="Password"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/email_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit_text"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/clik_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:text="Click" />
+
+
+</RelativeLayout>
